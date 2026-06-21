@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Health Stats Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Global Health Stats Tracker</h1>
+            <p>Real-time data for health awareness campaigns</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="countryInput" placeholder="Enter country name (e.g., India, USA, France)...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="riskAlert" class="alert hidden"></div>
+
+        <main class="stats-grid">
+            <div class="card cases">
+                <h3>Total Cases</h3>
+                <p id="totalCases">-</p>
+            </div>
+            <div class="card active">
+                <h3>Active Cases</h3>
+                <p id="activeCases">-</p>
+            </div>
+            <div class="card recovered">
+                <h3>Total Recovered</h3>
+                <p id="totalRecovered">-</p>
+            </div>
+            <div class="card deaths">
+                <h3>Total Deaths</h3>
+                <p id="totalDeaths">-</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
